@@ -1,12 +1,21 @@
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+// import { ProductsCatalogPage } from './pages/ProductsCatalogPage';
+// import { ShoppingCartPage } from './pages/ShoppingCartPage';
+// import { NoMatch } from './components/NoMatch';
+import { Layout } from './components/Layout';
+import './App.scss';
 
-const App = () => {
+export const App: React.FC = () => {
   return (
-    <div className="content">
-      <h1>Rsbuild with React</h1>
-      <p>Start building amazing things with Rsbuild.</p>
+    <div>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          {/* <Route index element={<ProductsCatalogPage />} /> */}
+          {/* <Route path='shoppingcart' element={<ShoppingCartPage />} /> */}
+          {/* <Route path='*' element={<NoMatch />} /> */}
+        </Route>
+      </Routes>
+
     </div>
   );
-};
-
-export default App;
+}
