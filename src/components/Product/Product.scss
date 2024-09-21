@@ -2,7 +2,7 @@
 
 .product {
   background-color: $secondary-background;
-  padding: 23px;
+  padding: 25px;
   border-radius: 30px;
   
   display: flex;
@@ -17,11 +17,11 @@
     margin-bottom: 2rem;
   }
 
-  &--wrapper {
+  &__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+    width: 200px;
     height: 240px;
     margin-bottom: 40px;
   }
