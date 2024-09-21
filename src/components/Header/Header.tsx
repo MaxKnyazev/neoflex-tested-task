@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useStoreOfShoppingCart } from '../../store';
-import './Header.scss';
 import { Title } from '../Title';
+import './Header.scss';
 
 export const Header: React.FC = () => {
   const products = useStoreOfShoppingCart((state) => state.products);
@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
               </svg>
 
             <span className="header__count">
-              1
+              {products.length}
             </span>
           </div>
         </Link>
@@ -37,13 +37,3 @@ export const Header: React.FC = () => {
     </header>
   );
 }
-
-
-/**
- * 
-import { useStoreOfShoppingCart } from '../store';
-
-export const ShoppingCartPage: React.FC = () => {
-  const products = useStoreOfShoppingCart((state) => state.products);
-
- */

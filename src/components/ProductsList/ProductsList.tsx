@@ -5,7 +5,7 @@ import './ProductsList.scss';
 export const ProductsList: React.FC<ArrayOfProductsProps> = ({ products }) => {
   return (
     <ul className="products-list">
-      {products.map((product) => (
+      { products.map((product) => (
         <Product 
           key={product.id} 
           {...product}

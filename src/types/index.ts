@@ -23,6 +23,6 @@ export type SectionOfProductsProps = {
 }
 
 export type ActionsShoppingCart = {
-  addProduct: (productId: string) => void;
-  removeProduct: (productId: string) => void;
+  addProduct?: (product: ProductProps) => void;
+  removeProduct?: (id: number) => void;
 }
