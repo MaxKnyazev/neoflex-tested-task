@@ -1,16 +1,23 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { ActionsShoppingCart, ArrayOfProductsProps } from "../types";
+import AppleBYZS852I from '../assets/img/AppleBYZS852I.png';
+import AppleEarPods from '../assets/img/AppleEarPods.png';
+import AppleEarPods2 from '../assets/img/AppleEarPods2.png';
+import AppleAirPods from '../assets/img/AppleAirPods.png';
+import BOROFONEBO4 from '../assets/img/BOROFONEBO4.png';
+import GERLAXGH04 from '../assets/img/GERLAXGH-04.png';
 
 export const useStoreOfProducts = create(
   devtools<ArrayOfProductsProps>((set, get) => ({
     products: [
       {
         id: 1,
-        img: ".assets/1111.png",
-        title: "Apple AIRpods",
-        price: 2568,
-        rate: 4.5,
+        img: AppleBYZS852I,
+        title: "Apple BYZ S852I",
+        price: 2927,
+        discount: 3527,
+        rate: 4.7,
         attribute: "landline",
         description: `
         1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
@@ -25,13 +32,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 2,
-        img: ".assets/2222.png",
-        title: "Apple AirPods Pro 2",
-        price: 2555,
-        rate: 4.7,
+        img: AppleEarPods,
+        title: "Apple EarPods",
+        price: 2327,
+        discount: 0,
+        rate: 4.5,
         attribute: "landline",
         description: `
-        2222 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -43,13 +51,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 3,
-        img: ".assets/3333.png",
-        title: "Apple AirPods Pro 3",
-        price: 21211,
-        rate: 4.8,
-        attribute: "wireless",
+        img: AppleEarPods2,
+        title: "Apple EarPods",
+        price: 2327,
+        discount: 0,
+        rate: 4.5,
+        attribute: "landline",
         description: `
-        3333 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -61,13 +70,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 4,
-        img: ".assets/4444.png",
-        title: "Apple AirPods Pro 4",
-        price: 2544,
-        rate: 4.2,
+        img: AppleBYZS852I,
+        title: "Apple BYZ S852I",
+        price: 2927,
+        discount: 0,
+        rate: 4.7,
         attribute: "landline",
         description: `
-        4444 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -79,13 +89,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 5,
-        img: ".assets/5555.png",
-        title: "Apple AirPods Pro 5",
-        price: 2555,
-        rate: 4.7,
-        attribute: "wireless",
+        img: AppleEarPods,
+        title: "Apple EarPods",
+        price: 2327,
+        discount: 0,
+        rate: 4.5,
+        attribute: "landline",
         description: `
-        5555 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -97,13 +108,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 6,
-        img: ".assets/6666.png",
-        title: "Apple AirPods Pro 6",
-        price: 5551,
-        rate: 4.8,
-        attribute: "wireless",
+        img: AppleEarPods2,
+        title: "Apple EarPods",
+        price: 2327,
+        discount: 0,
+        rate: 4.5,
+        attribute: "landline",
         description: `
-        666 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -115,13 +127,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 7,
-        img: ".assets/7777.png",
-        title: "Apple AirPods Pro 7",
-        price: 2577,
-        rate: 4.3,
-        attribute: "landline",
+        img: AppleAirPods,
+        title: "Apple AirPods",
+        price: 9527,
+        discount: 0,
+        rate: 4.7,
+        attribute: "wireless",
         description: `
-        7777 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -133,13 +146,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 8,
-        img: ".assets/8888.png",
-        title: "Apple AirPods Pro 8",
-        price: 2588,
+        img: GERLAXGH04,
+        title: "GERLAX GH-04",
+        price: 6527,
+        discount: 0,
         rate: 4.7,
-        attribute: "landline",
+        attribute: "wireless",
         description: `
-        8888 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
@@ -151,31 +165,14 @@ export const useStoreOfProducts = create(
       },
       {
         id: 9,
-        img: ".assets/9999.png",
-        title: "Apple AirPods Pro 9",
-        price: 2599,
-        rate: 4.9,
-        attribute: "landline",
-        description: `
-        9999 The ultimate over-ear personal listening experience — now in fresh new colors. 
-        AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
-        Audio with dynamic head tracking for sound that surrounds you. 
-        Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
-        Footnote ³ Transparency mode to comfortably hear the world around you. 
-        Up to 20 hours of battery life on a single charge. Footnote ¹⁵ Effortless setup 
-        and on-head detection for a magical listening experience. 
-        Now with USB-C for easy charging.
-      `,
-      },
-      {
-        id: 10,
-        img: ".assets/1010.png",
-        title: "Apple AirPods Pro 10",
-        price: 2510,
-        rate: 4.1,
+        img: BOROFONEBO4,
+        title: "BOROFONE BO4",
+        price: 7527,
+        discount: 0,
+        rate: 4.7,
         attribute: "wireless",
         description: `
-        1010 The ultimate over-ear personal listening experience — now in fresh new colors. 
+        1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
         Audio with dynamic head tracking for sound that surrounds you. 
         Footnote ⁴ Pro-level Active Noise Cancellation to remove unwanted sound. 
