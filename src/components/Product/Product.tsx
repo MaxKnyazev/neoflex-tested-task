@@ -1,21 +1,11 @@
+import { useStoreOfShoppingCart } from '../../store';
 import { ProductProps } from '../../types';
 import './Product.scss';
 
-export const Product: React.FC<ProductProps> = ({ id, img, title, price, rate, attribute, discount }) => {
+ export const Product: React.FC<ProductProps> = ({ ...product }) => {
+  const { id, img, title, price, rate, attribute, discount } = product;
+  const addProduct = useStoreOfShoppingCart(state => state.addProduct);
   return (
-    // <div className="product">
-    //   <div className="product__data">
-    //     <h3>{title}</h3>
-    //     <p>
-    //       {id}--{img}--{rate}--{attribute}--Price: {price.toFixed(2)}---
-    //       <button className="product__button">К У П И Т Ь</button>
-    //     </p>
-    //   </div>
-    // </div>
-
-
-
-
     <li className="product">
       <div className="product__wrapper">
         <img className="product__img" src={img} alt={title} />
@@ -41,7 +31,10 @@ export const Product: React.FC<ProductProps> = ({ id, img, title, price, rate, a
           </svg>
           {rate}
         </div>
-        <button className="product__buy">Купить</button>
+        <button 
+          className="product__buy"
+          onClick={() => {if (addProduct) addProduct(product)}}
+        >Купить</button>
       </div>
     </li>
   );

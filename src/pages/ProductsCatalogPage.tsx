@@ -1,12 +1,11 @@
 import { ProductsCatalog } from '../components/ProductsCatalog';
-import { useStoreOfProducts } from '../store';
+import { SessionStorageExample } from '../components/SessionStorageExample';
 
 export const ProductsCatalogPage: React.FC = () => {
-  const products = useStoreOfProducts((state) => state.products);
-  
   return (
-    <div className="products">
-      <ProductsCatalog products={products} />
+    <div className="products-catalog">
+      <SessionStorageExample />
+      <ProductsCatalog />
     </div>
   );
 }
