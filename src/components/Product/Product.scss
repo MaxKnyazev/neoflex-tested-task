@@ -2,7 +2,7 @@
 
 .product {
   background-color: $secondary-background;
-  padding: 25px;
+  padding: 31px;
   border-radius: 30px;
   
   display: flex;
@@ -15,8 +15,8 @@
   &__img {
     // width: 100%;
     width: 12rem;
-    height: 12rem;
-    margin-bottom: 2rem;
+    height: 14rem;
+    margin-bottom: 3.5rem;
   }
 
   &__wrapper {
