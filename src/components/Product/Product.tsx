@@ -17,7 +17,7 @@ export const Product: React.FC<ProductProps> = ({ id, img, title, price, rate, a
 
 
     <li className="product">
-      <div className="product__img--wrapper">
+      <div className="product__wrapper">
         <img className="product__img" src={img} alt={title} />
       </div>
       <div className="product__info">

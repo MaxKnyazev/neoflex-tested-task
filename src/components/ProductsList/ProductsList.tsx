@@ -3,13 +3,13 @@ import { Product } from '../Product';
 
 export const ProductsList: React.FC<ArrayOfProductsProps> = ({ products }) => {
   return (
-    <div className="products-list">
+    <ul className="products-list">
       {products.map((product) => (
         <Product 
           key={product.id} 
           {...product}
         />
       ))}
-    </div>
+    </ul>
   );
 };
