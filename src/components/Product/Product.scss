@@ -13,32 +13,40 @@
   box-shadow: 0px 0px 20px 0px #0000001A;
   
   &__img {
-    width: 100%;
+    // width: 100%;
+    width: 12rem;
+    height: 12rem;
     margin-bottom: 2rem;
   }
 
   &__wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 240px;
-    margin-bottom: 40px;
+    flex-direction: column;
+    width: 9rem;
+
+    // justify-content: center;
+    // align-items: center;
+    // width: 200px;
+    // height: 240px;
+    // margin-bottom: 40px;
   }
   
   &__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1rem;
-    font-weight: 600;
-    font-size: 17px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // row-gap: 1rem;
+    // font-weight: 600;
+    // font-size: 17px;
+
+    display: flex;
   }
 
   &__title {
     font-weight: 600;
     font-size: 17px;
     color: $secondary-text;
+    margin-bottom: 1rem;
   }
 
   &__price {
@@ -50,12 +58,21 @@
   }
 
   &__discount {
-    position: absolute;
-    top: 1.1rem;
-    left: 5.8rem;
+    // position: absolute;
+    // top: 1.1rem;
+    // left: 5.8rem;
     font-size: 13px;
     text-decoration: line-through;
     color: $secondary-text-highlight;
+  }
+
+  &__nodiscount {
+    // position: absolute;
+    // top: 1.1rem;
+    // left: 5.8rem;
+    font-size: 17px;
+    color: $primary-text-highlight;
+    margin-bottom: 1rem;
   }
 
   &__rating {
@@ -75,7 +92,7 @@
     text-align: end;
     font-weight: 600;
     font-size: 17px;
-    padding: 5px;
+    // padding: 5px;
     cursor: pointer;
 
     &:hover {
