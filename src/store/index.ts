@@ -197,6 +197,7 @@ export const useStoreOfShoppingCart = create(
         discount: 0,
         rate: 4.7,
         attribute: "wireless",
+        count: 1,
         description: `
         1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
@@ -216,6 +217,7 @@ export const useStoreOfShoppingCart = create(
         discount: 0,
         rate: 4.7,
         attribute: "wireless",
+        count: 1,
         description: `
         1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 
@@ -235,6 +237,7 @@ export const useStoreOfShoppingCart = create(
         discount: 0,
         rate: 4.7,
         attribute: "wireless",
+        count: 1,
         description: `
         1111 The ultimate over-ear personal listening experience — now in fresh new colors. 
         AirPods Max deliver stunningly detailed, high-fidelity audio. Personalized Spatial 

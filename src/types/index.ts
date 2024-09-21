@@ -6,6 +6,7 @@ export type ProductProps = {
   discount: number;
   rate: number;
   attribute: string;
+  count?: number;
   description?: string;
 }
 
