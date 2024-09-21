@@ -15,8 +15,8 @@ export const useStoreOfProducts = create(
         id: 1,
         img: AppleBYZS852I,
         title: "Apple BYZ S852I",
-        price: 2927,
-        discount: 3527,
+        price: 3527,
+        discount: 2927,
         rate: 4.7,
         attribute: "landline",
         description: `

@@ -3,7 +3,7 @@ export type ProductProps = {
   img: string;
   title: string;
   price: number;
-  discount?: number;
+  discount: number;
   rate: number;
   attribute: string;
   description?: string;
