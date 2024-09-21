@@ -1,0 +1,10 @@
+@import '../../variable';
+
+.title {
+  color: $primary-text;
+  font-size: 25px;
+
+  &:hover {
+    color: $primary-text-highlight;
+  }
+}

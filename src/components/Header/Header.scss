@@ -1,0 +1,48 @@
+@import '../../variable';
+
+.header {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0 15px 0;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__icon {
+    position: relative;
+    cursor: pointer;
+
+    &:hover .header__svg {
+      fill: $secondary-text;
+    }
+  }
+
+  &__svg {
+    fill: $text-mute;
+  }
+
+  &__count {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    background-color: $primary-text-highlight;
+    color: $secondary-background;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50%;
+    width: 17.5px;
+    height: 17.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
