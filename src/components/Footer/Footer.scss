@@ -25,6 +25,7 @@
     &__page {
       color: $tertiary-text;
       font-size: 17px;
+      transition: color 200ms linear;
 
       &:hover {
         color: $primary-text-highlight;
@@ -34,6 +35,7 @@
     &__terms {
       color: $tertiary-text;
       font-size: 17px;
+      transition: color 200ms linear;
 
       &:hover {
         color: $primary-text-highlight;
@@ -87,6 +89,7 @@
   &__social {
     color: $tertiary-text;
     font-size: 17px;
+    transition: fill 200ms linear;
 
     &:hover .footer__svg {
       fill: $primary-text-highlight;

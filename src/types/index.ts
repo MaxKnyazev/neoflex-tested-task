@@ -27,7 +27,7 @@ export type SectionOfProductsProps = {
 export type ActionsProducts = {
   editProductCount?: (id: number, newCount: number) => void;
   toggleProductFavourite?: (id: number) => void;
-  saveToSessionStorage?: (data: ArrayOfProductsProps) => void;
+  saveToSessionStorage?: (data: ProductProps[]) => void;
   loadFromSessionStorage?: () => void;
 }
 

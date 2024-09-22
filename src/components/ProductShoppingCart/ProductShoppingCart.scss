@@ -46,10 +46,16 @@
       height: 1.75rem;
       font-size: 25px;
       font-weight: 500;
+      cursor: pointer;
 
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: background-color 200ms linear;
+
+      &:hover {
+        background-color: $primary-text-highlight;
+      }
     }
 
     &__num {

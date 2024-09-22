@@ -12,6 +12,11 @@ export const ShoppingCart: React.FC = () => {
   let resultMoney = 0;
   filteredProducts.forEach(product => resultMoney += product.count * (product.discount || product.price))
   return (
+    !filteredProducts.length ?
+    <>
+    <h2>Корзина пуста</h2>
+    </>
+    :
     <>
       <div className="cart">
         <span className="cart__title">Корзина</span>

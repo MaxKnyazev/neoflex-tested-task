@@ -1,20 +1,21 @@
+import { Link } from 'react-router-dom';
 import { Title } from '../Title/Title';
 import './Footer.scss';
 
 export const Footer: React.FC = () => {
   return (
-<footer className="footer">
+    <footer className="footer">
         <Title />
         <nav className="footer__nav nav">
           <ul className="nav__pages">
             <li>
               <a className="nav__page" href="#">Избранное</a>
             </li>
+            <Link to='/shoppingcart' className="nav__page">
+              Корзина
+            </Link>
             <li>
-              <a className="nav__page" href="#">Корзина</a>
-            </li>
-            <li>
-              <a className="nav__page" href="#">Контакты</a>
+             <a className="nav__page" href="#">Контакты</a>
             </li>
           </ul>
 

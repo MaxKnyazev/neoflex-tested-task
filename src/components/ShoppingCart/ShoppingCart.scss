@@ -55,6 +55,7 @@
       font-weight: 600;
       font-size: 17px;
       cursor: pointer;
+      transition: color 200ms linear;
 
       &:hover {
         color: $primary-text-highlight;

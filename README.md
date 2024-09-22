@@ -1,29 +1,8 @@
-# Rsbuild Project
+# Neoflex tested task
 
-## Setup
+## Rsbuild Project
 
-Install the dependencies:
 
-```bash
-pnpm install
-```
+### Deployed project: [neoflex-tested-task](https://raccoonsilent-cvkg2c--69915.stormkit.dev/)
 
-## Get Started
-
-Start the dev server:
-
-```bash
-pnpm dev
-```
-
-Build the app for production:
-
-```bash
-pnpm build
-```
-
-Preview the production build locally:
-
-```bash
-pnpm preview
-```
+### Please visit the repository: [neoflex-tested-task repository](https://github.com/MaxKnyazev/neoflex-tested-task)
