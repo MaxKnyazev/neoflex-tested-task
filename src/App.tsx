@@ -4,8 +4,17 @@ import { ShoppingCartPage } from './pages/ShoppingCartPage';
 import { NoMatch } from './components/NoMatch';
 import { Layout } from './components/Layout';
 import './App.scss';
+import { useEffect } from 'react';
+import { useStoreOfProducts } from './store';
 
 export const App: React.FC = () => {
+  const loadFromSessionStorage = useStoreOfProducts(state => state.loadFromSessionStorage);
+  useEffect(() => {
+    if (loadFromSessionStorage) {
+      loadFromSessionStorage();
+    }
+  }, [loadFromSessionStorage]);
+
   return (
     <div className="app">
       <Routes>

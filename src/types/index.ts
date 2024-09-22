@@ -6,7 +6,8 @@ export type ProductProps = {
   discount: number;
   rate: number;
   attribute: string;
-  count?: number;
+  count: number;
+  isFavourite: boolean;
   description?: string;
 }
 
@@ -23,7 +24,14 @@ export type SectionOfProductsProps = {
   title: string;
 }
 
-export type ActionsShoppingCart = {
-  addProduct?: (product: ProductProps) => void;
-  removeProduct?: (id: number) => void;
+export type ActionsProducts = {
+  editProductCount?: (id: number, newCount: number) => void;
+  toggleProductFavourite?: (id: number) => void;
+  saveToSessionStorage?: (data: ArrayOfProductsProps) => void;
+  loadFromSessionStorage?: () => void;
 }
+
+// export type ActionsShoppingCart = {
+//   addProduct?: (product: ProductProps) => void;
+//   removeProduct?: (id: number) => void;
+// }

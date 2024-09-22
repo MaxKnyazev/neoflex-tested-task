@@ -1,10 +1,10 @@
-import { useStoreOfShoppingCart } from '../../store';
+import { useStoreOfProducts } from '../../store';
 import { ProductProps } from '../../types';
 import './Product.scss';
 
  export const Product: React.FC<ProductProps> = ({ ...product }) => {
   const { id, img, title, price, rate, attribute, discount } = product;
-  const addProduct = useStoreOfShoppingCart(state => state.addProduct);
+  const editProductCount = useStoreOfProducts(state => state.editProductCount);
   return (
     <li className="product">
       <div className="product__wrapper">
@@ -33,7 +33,8 @@ import './Product.scss';
         </div>
         <button 
           className="product__buy"
-          onClick={() => {if (addProduct) addProduct(product)}}
+          onClick={() => {if (editProductCount) editProductCount(id, 1)}}
+          // onClick={e => {console.log(e.currentTarget)}}
         >Купить</button>
       </div>
     </li>
