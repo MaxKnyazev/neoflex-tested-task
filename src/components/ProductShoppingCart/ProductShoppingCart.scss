@@ -110,3 +110,30 @@
       }
     }
   }
+
+  @media (max-width: 670px) { 
+    .cart {
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 3rem;
+      }
+  
+      &__info {
+        align-items: center;
+        gap: 0.2rem;
+      }
+  
+      &__result {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5rem;
+      }
+    }
+  }

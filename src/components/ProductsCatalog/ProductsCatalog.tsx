@@ -6,7 +6,7 @@ import './ProductsCatalog.scss';
 export const ProductsCatalog: React.FC = () => {
   const products = useStoreOfProducts((state) => state.products);
   return (
-    <main className="catalog">
+    <div className="catalog">
       <ProductsSection 
         products={products} 
         fn={filteringFunction}
@@ -19,6 +19,6 @@ export const ProductsCatalog: React.FC = () => {
         attribute={`wireless`} 
         title='Беспроводные наушники'
       />
-    </main>
+    </div>
   );
 }

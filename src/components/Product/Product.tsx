@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import { useStoreOfProducts } from '../../store';
 import { ProductProps } from '../../types';
 import './Product.scss';
 
  export const Product: React.FC<ProductProps> = ({ ...product }) => {
-  const { id, img, title, price, rate, attribute, discount } = product;
+  const { id, img, title, price, rate, attribute, discount, count } = product;
   const editProductCount = useStoreOfProducts(state => state.editProductCount);
   return (
     <li className="product">
@@ -33,10 +34,19 @@ import './Product.scss';
                 </>
             }
           </div>
-          <button 
-            className="product__buy"
-            onClick={() => {if (editProductCount) editProductCount(id, 1)}}
-          >Купить</button>
+          {
+            count ?
+              <Link className="product__buy" to="/shoppingcart">
+                <button 
+                  className="product__buy"
+                >В корзину</button>
+              </Link>
+            :
+              <button 
+                className="product__buy"
+                onClick={() => {if (editProductCount) editProductCount(id, 1)}}
+              >Купить</button>
+          }
         </div>
       </div>
     </li>

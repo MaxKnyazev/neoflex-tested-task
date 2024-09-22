@@ -1,3 +1,10 @@
 .shopping-cart {
     display: flex;
 }
+
+@media (max-width: 1110px) { 
+    .shopping-cart {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+  }

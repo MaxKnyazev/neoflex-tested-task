@@ -63,4 +63,24 @@
     }
   }
 
-// @media screen and (max-width: 600px) {}
+@media (max-width: 1110px) { 
+  .products-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 670px) { 
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // &__title {
+    //   text-align: center;
+    // }
+  }
+
+  .payment {
+    margin-left: 0;
+  }
+}
