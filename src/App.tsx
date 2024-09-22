@@ -1,3 +1,5 @@
+import type { RouteObject } from 'react-router-dom';
+import { useRoutes } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import { ProductsCatalogPage } from './pages/ProductsCatalogPage';
 import { ShoppingCartPage } from './pages/ShoppingCartPage';
@@ -15,16 +17,23 @@ export const App: React.FC = () => {
     }
   }, [loadFromSessionStorage]);
 
+  let routes: RouteObject[] = [
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        { index: true, element: <ProductsCatalogPage /> },
+        { path: '/shoppingcart', element: <ShoppingCartPage />, },
+        { path: '*', element: <NoMatch /> },
+      ],
+    },
+  ];
+
+  let element = useRoutes(routes);
+
   return (
     <div className="app">
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<ProductsCatalogPage />} />
-          <Route path='shoppingcart' element={<ShoppingCartPage />} />
-          <Route path='*' element={<NoMatch />} />
-        </Route>
-      </Routes>
-
+      {element}
     </div>
   );
 }
